@@ -1,0 +1,43 @@
+<mat-toolbar>
+  <span class="sidecontent" (click)="opened = !opened">
+    <mat-icon>menu</mat-icon>
+  </span>
+  <span>
+    <a routerLink="/home" routerLinkActivate="active">
+      <button mat-button>{{ componentContent.textElements.home }}</button>
+    </a>
+  </span>
+  <span class="fill-remainig-space"></span>
+  <a routerLink="/login" routerLinkActivate="active">
+    <button mat-button>{{ componentContent.textElements.logout }}</button>
+  </a>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav [(opened)]="opened" mode="side">
+    <mat-nav-list (click)="opened = !opened">
+      <a mat-list-item routerLink="/license" routerLinkActivate="active">
+        <mat-icon>book </mat-icon>
+        {{ componentContent.textElements.license }}
+      </a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLink="/enrollment" routerLinkActivate="active">
+        <mat-icon>book </mat-icon>
+        {{ componentContent.textElements.enrollment }}
+      </a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLink="/students" routerLinkActivate="active">
+        <mat-icon>book </mat-icon>
+        {{ componentContent.textElements.students }}
+      </a>
+      <mat-divider></mat-divider>
+      <a mat-list-item  routerLink="/schedule" routerLinkActivate="active">
+        <mat-icon>book </mat-icon>
+        {{ componentContent.textElements.schedule }}
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <!-- <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content> -->
+</mat-sidenav-container>
