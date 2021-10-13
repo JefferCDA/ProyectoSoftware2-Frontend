@@ -4,8 +4,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './fv-students.component.html',
   styleUrls: ['./fv-students.component.scss'],
 })
-export class FvStudentsComponent implements OnInit {
 
+export class FvStudentsComponent implements OnInit {
+  public titulo:string="Consulta de Verificacion"
 
   constructor() {
   }

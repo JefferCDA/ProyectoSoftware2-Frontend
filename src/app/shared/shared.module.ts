@@ -8,7 +8,8 @@ import { BannerComponent } from './components/banner/banner.component';
   declarations: [
     HeaderComponent,
     FooterComponent,
-    BannerComponent
+    BannerComponent,
+
   ],
   imports: [
     CommonModule

@@ -1,1 +1,25 @@
-Students works!!
+<div class="card border-primary">
+  <div class="card-header  bg-primary text-white">{{ titulo }}</div>
+  <div class="card-body text-dark">
+
+    <h4 class="card-title">Tipo de Documento</h4>
+    <div class="col-sm-6">
+      <select  class="form-control mb-3"  name="region" type="width:500px;">
+        <option  >--- Tipo de documento  ---</option>
+        <option>Ti</option>
+        <option>CC</option>
+        <option>CE</option>
+        <option>NIT</option>
+      </select>
+  </div>
+
+  <h4 class="card-title">Digitar numero de Documento</h4>
+    <div class="col-sm-6">
+      <input type="text" class="form-control mb-3" name="documento"required minlength="4" >
+  </div>
+      <div class=" ny-2 text-left mb-3">
+          <button class="btn btn-rounded btn-primary "  type=" button">Consultar</button>
+      </div>
+    </div>
+</div>
+
