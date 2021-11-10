@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FvVirtualLicenseComponent } from './fv-virtual-license.component';
 import { FvVirtualLicenseRoutingModule } from './fv-virtual-license-routing.module';
-
+import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,8 @@ import { FvVirtualLicenseRoutingModule } from './fv-virtual-license-routing.modu
   ],
   imports: [
     CommonModule,
-    FvVirtualLicenseRoutingModule
+    FvVirtualLicenseRoutingModule,
+    NgxQRCodeModule
   ],
   exports: [
     FvVirtualLicenseComponent,

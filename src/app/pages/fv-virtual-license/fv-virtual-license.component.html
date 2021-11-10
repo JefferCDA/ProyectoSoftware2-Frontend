@@ -1,23 +1,23 @@
-<h1>
-    Hola Mundo!
-</h1>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aut quasi error nobis at corporis sit quod! Labore, accusamus animi suscipit vel dolor esse harum nihil doloremque consequatur id soluta.
-Nulla dolore repellat beatae fugiat dignissimos! Maiores illo assumenda, explicabo soluta provident, quod molestiae, porro at dolore debitis unde ad repellendus? Praesentium labore illo commodi sit, recusandae corporis blanditiis officia.
-Voluptatem, architecto! Corporis deserunt impedit necessitatibus quam itaque explicabo sapiente sed rem, molestiae in earum labore quibusdam recusandae error? Rerum ut maxime tempore provident. Ad placeat libero corrupti amet ratione.
-Necessitatibus vitae, quo sapiente doloribus omnis hic minus natus itaque, placeat sunt dolorem facilis soluta provident eveniet. Nemo repellendus id consequatur nostrum ex assumenda quis. Accusantium soluta corrupti sint et!
-Nemo soluta rem deleniti ex ullam facere, delectus aliquid! Accusantium aperiam molestias alias odit enim nulla iste sapiente sint. Similique voluptatum cum officiis eaque quam esse voluptate aliquid consequatur. Quis.
-Nemo, repellendus. Iure suscipit, facilis numquam possimus nulla quas, libero repellendus fuga fugiat ipsa architecto quos recusandae labore facere, vero rerum ipsum modi deleniti incidunt mollitia accusantium! Tempore, dolores eum.
-Quo, sapiente animi aperiam ab molestias eos magnam repellendus in iure at. Saepe, quaerat? A distinctio similique voluptatum tempore, non, iste quasi corrupti, doloribus facere tenetur nihil eaque cum nobis.
-Dolor error magnam ea laudantium non obcaecati animi at iure fuga maxime ab, officia doloremque rerum unde quod distinctio adipisci dignissimos consequuntur quae sint quo sunt saepe? Nam, vel ducimus.
-Quasi pariatur corrupti nemo atque esse, sed voluptate optio neque laudantium ut accusantium voluptas quos natus autem? Soluta, asperiores, quidem amet quod ullam molestiae, officia voluptatibus ducimus minus incidunt veritatis.
-Iusto, quidem libero. Magnam facilis sint quam totam exercitationem molestias quasi veritatis eum, alias velit dolore aliquid labore voluptate! Deserunt, facilis minima! Accusamus, pariatur. Laboriosam fugit possimus natus consectetur numquam!
-Laudantium error temporibus totam corrupti sed quaerat, soluta labore eos, aliquid necessitatibus enim illo minima molestias! Perferendis asperiores maiores quisquam eius possimus nulla omnis dolor molestiae tenetur ipsum, nisi provident.
-Nam, veritatis ad, veniam sed modi aliquid vitae dolorem omnis, animi asperiores in adipisci similique! Ipsam velit delectus molestias enim quisquam praesentium, autem dolore voluptatem necessitatibus. Inventore doloremque eum eos.
-Quam qui in, ea quos eaque et ullam aspernatur hic possimus officia mollitia tenetur ad necessitatibus, quibusdam, beatae dolores fugiat? Explicabo, deserunt maxime! Suscipit eum est necessitatibus atque quis vel.
-Accusantium, voluptates, quas doloremque debitis tempore harum voluptatum nesciunt quisquam similique fugiat est minus neque iure, in iste quae aliquam magni nam. Impedit maiores sequi optio dolores soluta non alias.
-Commodi libero nam minima perspiciatis ex voluptatum tenetur. Deleniti necessitatibus dolores possimus assumenda commodi exercitationem culpa voluptatibus perferendis quibusdam! Reprehenderit exercitationem quos iure, dolorem quam consequuntur debitis fugiat voluptatum facilis!
-Modi quidem exercitationem quibusdam optio? Dolorum iusto cum necessitatibus unde dolor saepe officiis at exercitationem. Deleniti repellendus illo enim, blanditiis harum sunt autem, aliquid porro ad eos quas cupiditate. Deleniti?
-Qui voluptatibus similique ipsam, praesentium ab maxime magni veniam voluptate nemo quidem sed, at debitis aliquid. Quasi voluptates voluptatem vel error perferendis! Facere, esse tempora. Explicabo et expedita optio voluptas.
-Sint quia corrupti, iusto quod sed ab maxime, modi minima velit unde officia vel? Quos exercitationem aperiam beatae magnam consequatur ea aspernatur alias eaque dignissimos voluptate quia, odio in dolore!
-Hic veniam numquam dolorem fugit corrupti rerum iure praesentium. Aliquam eligendi sunt voluptate quia. Quibusdam, iusto. Soluta excepturi accusamus aperiam deserunt, similique fugiat nostrum culpa quos voluptates assumenda ducimus esse!
-Amet, debitis sunt! Deleniti, aliquam fugit vel quos nostrum cumque obcaecati cupiditate quidem error nulla necessitatibus. Voluptatum architecto voluptates iure, fugit adipisci aliquid voluptatibus. Rerum doloribus totam veniam ratione assumenda!
+<div class="container-license" (click)="showQR()">
+  <div class="container-data">
+    <div class="container-logo">
+      <img class="img" [src]="logoUR" alt="" />
+    </div>
+    <label for=""> Jeferson David</label>
+    <label for=""> Camacho De aguas </label>
+    <label for=""> 123456789 </label>
+    <label for=""> ING Informática </label>
+  </div>
+  <div class="container-photo" *ngIf="!showQr">
+    <img class="img" [src]="profilePhoto" alt="" />
+  </div>
+  <div class="container-qr" *ngIf="showQr">
+    <ngx-qrcode
+      [elementType]="elementType"
+      [value]="value"
+      cssClass="container-qr"
+      [errorCorrectionLevel]="errorCorrectionLevel"
+    >
+    </ngx-qrcode>
+  </div>
+</div>
