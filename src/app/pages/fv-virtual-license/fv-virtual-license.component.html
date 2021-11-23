@@ -1,3 +1,37 @@
+<div class="buttons-actions">
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="showModal('update', 'Actualizar Registro')"
+  >
+    Actualizar datos
+  </button>
+  <button mat-raised-button color="warn" (click)="loadLicenses()" >Eliminar registro</button>
+</div>
+<app-modal *ngIf="showM" [title]="title" (clicked)="closeModal($event)">
+
+  <form [formGroup]="form"  (submit)="updateLicense()">
+    <div class="from-update">
+      <div class="inputs">
+        <label for="">Id</label>
+        <input formControlName="id" />
+        <label for="">Nombre</label>
+        <input formControlName="name" />
+        <label for="">Apellido</label>
+        <input formControlName="lastName" />
+        <label for="">Documento</label>
+        <input formControlName="document" />
+        <label for="">Programa</label>
+        <input formControlName="program" />
+        <label for="">Imagen</label>
+        <input formControlName="photo" />
+      </div>
+
+      <button mat-stroked-button color="primary">Enviar</button>
+    </div>
+  </form>
+</app-modal>
+
 <div class="container-license" (click)="showQR()">
   <div class="container-data">
     <div class="container-logo">
@@ -8,6 +42,7 @@
     <label for=""> 123456789 </label>
     <label for=""> ING Informática </label>
   </div>
+
   <div class="container-photo" *ngIf="!showQr">
     <img class="img" [src]="profilePhoto" alt="" />
   </div>

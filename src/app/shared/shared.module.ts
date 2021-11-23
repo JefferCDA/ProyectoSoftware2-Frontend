@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    BannerComponent
+    BannerComponent,
+    ModalComponent
   ],
   imports: [
     CommonModule
@@ -16,7 +18,8 @@ import { BannerComponent } from './components/banner/banner.component';
   exports: [
     HeaderComponent,
     FooterComponent,
-    BannerComponent
+    BannerComponent,
+    ModalComponent
   ]
 
 })

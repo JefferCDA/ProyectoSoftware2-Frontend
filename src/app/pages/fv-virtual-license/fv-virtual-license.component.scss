@@ -13,6 +13,25 @@
   margin: -25px 0 0 -25px;
   max-width: 500px;
 }
+.buttons-actions {
+  display: flex;
+  width: 490px;
+  position: absolute;
+  left: 36%;
+  justify-content: space-between;
+  width: 25%;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+.from-update {
+  button {
+    margin-top: 10px;
+    color: rgb(15, 216, 156);
+    background-color: rgb(206, 203, 203);
+  }
+}
 .container-logo {
   img {
     margin-right: 20px;
@@ -37,6 +56,6 @@
     max-height: 60%;
   }
 }
-.container-qr{
+.container-qr {
   width: 310px;
 }

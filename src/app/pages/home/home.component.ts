@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  grafic = 'assets/images/grafico.png';
+  logoUR = 'assets/images/logoURblue.png'
+
   constructor() { }
-  
+
   ngOnInit(): void {
   }
 
