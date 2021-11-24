@@ -6,12 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
+  showM: String;
+  title: string;
   grafic = 'assets/images/grafico.png';
-  logoUR = 'assets/images/logoURblue.png'
+  logoUR = 'assets/images/logoURblue.png';
+  prom = 'assets/images/promedio.png';
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  showModal(event: string, titlo: string) {
+    this.showM = event;
+    this.title = titlo;
+  }
+  closeModal(e: string) {
+    this.showM = e;
+  }
 }

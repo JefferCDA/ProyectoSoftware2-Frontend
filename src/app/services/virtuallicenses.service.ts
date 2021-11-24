@@ -8,11 +8,12 @@ import { Observable } from 'rxjs';
 export class VirtualLicensesService {
   private urlApi= 'http://127.0.0.1:8000/api/Virtuallicense';
   constructor(private http: HttpClient ) {
-
   }
+
   public getAllLicenses(): Observable<any>{
     return this.http.get(this.urlApi );
   }
+
   public getLicense(licenseId: Number): Observable<any>{
     return this.http.get(`${this.urlApi}/${licenseId}`);
   }

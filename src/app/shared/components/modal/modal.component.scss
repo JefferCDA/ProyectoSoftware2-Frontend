@@ -15,6 +15,12 @@
         width: 100%;
         max-width: 500px;
     }
+    &-content2 {
+      width: auto;
+  }
+    &-img {
+      width: auto;
+    }
     &-header{
         height: 93px;
         display: flex;
@@ -24,7 +30,7 @@
         opacity: 1;
         background-color: #f6f6f6;
         opacity: 1;
-        background-image: radial-gradient(circle at center center, #f6f6ff, #f6f6f6), 
+        background-image: radial-gradient(circle at center center, #f6f6ff, #f6f6f6),
         repeating-radial-gradient(circle at center center, #f6f6ff, #f6f6ff, 10px, transparent 20px, transparent 10px);
         background-blend-mode: multiply;
         background-blend-mode: multiply;
@@ -57,5 +63,6 @@
         border-radius: 0 0 4px 4px;
 
     }
+
 
 }

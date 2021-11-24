@@ -2,9 +2,16 @@
   <div class="header">
     <h1>¿Que tal el semestre?</h1>
     <img class="img" [src]="logoUR" alt="" />
-    <button mat-raised-button color="primary">Promedio Asignaturas</button>
+    <button mat-raised-button color="primary"  (click)="showModal('update', 'Pomedio de notas')">Promedio Asignaturas</button>
   </div>
   <div class="container-img">
     <img class="img" [src]="grafic" alt="" />
   </div>
 </div>
+
+<app-modal *ngIf="showM" [title]="title" (clicked)="closeModal($event)" [prom]="true">
+  <div class="img-modal">
+    <img class="img" [src]="prom" alt="" />
+  </div>
+</app-modal>
+
